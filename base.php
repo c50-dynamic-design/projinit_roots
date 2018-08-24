@@ -14,7 +14,7 @@
   ?>
 
   <div class="wrap container" role="document">
-    <div class="content row">
+    <div id="main" class="content row">
       <div class="main <?php echo roots_main_class(); ?>" role="main">
         <?php include roots_template_path(); ?>
       </div><!-- /.main -->

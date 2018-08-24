@@ -266,7 +266,7 @@ add_filter('img_caption_shortcode', 'roots_caption', 10, 3);
  *
  * @link http://twitter.github.com/bootstrap/components.html#thumbnails
  */
-function roots_gallery($attr) {
+/*function roots_gallery($attr) {
   $post = get_post();
 
   static $instance = 0;
@@ -356,7 +356,7 @@ function roots_gallery($attr) {
 if (current_theme_supports('bootstrap-gallery')) {
   remove_shortcode('gallery');
   add_shortcode('gallery', 'roots_gallery');
-}
+}*/
 
 /**
  * Remove unnecessary dashboard widgets
