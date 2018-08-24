@@ -2,8 +2,14 @@
    Base
    ========================================================================== */
 
-body { }
+html, body {
+  height: 100%;
+}
 
+#main {
+  overflow:auto;
+  padding-bottom:200px; /* this needs to be bigger than footer height*/
+}
 
 
 /* =============================================================================
@@ -26,8 +32,19 @@ body { }
    Primary Content
    ========================================================================== */
 
-.main { }
+.main {
+}
 
+/*.logout {
+    float: left;
+    margin-right: 737px !important;
+    width: 200px;
+}*/
+
+.cx_footer_version .cx_version {
+float: right;
+margin-right: 785px !important;
+}
 
 
 /* ==========================================================================
@@ -54,7 +71,90 @@ body { }
    Footer
    ========================================================================== */
 
-.content-info { }
+.content-info {
+  background-color: #423232 !important;
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(41,19,19,1.00)),color-stop( 100% , rgba(119,117,117,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(41,19,19,1.00) 0%,rgba(119,117,117,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(41,19,19,1.00) 0%,rgba(119,117,117,1.00) 100%);
+}
+
+.footer {    position: relative;
+    margin-top: -150px; /* negative value of footer height */
+    height: 150px;
+    clear:both;
+    padding-top:20px;
+}
+
+.footer img {
+  height: 42px;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+a.fcbk_share {
+	background: transparent url(../img/social-fb-tw-in.png) scroll no-repeat 0px -33px;
+	display: block;
+	text-indent: -999999px;
+	padding-right: 0px;
+  margin-left: 1em;
+	margin-right: 0px;
+	width: 100px;
+	padding-top: 0px;
+	margin-top: 23px;
+	left: 38px;
+	position: relative;
+}
+
+a.twitt_share {
+	background: transparent url(../img/social-fb-tw-in.png) scroll no-repeat 0px 0px;
+	display: block;
+	text-indent: -999999px;
+	padding-right: 0px;
+  margin-left: 1em;
+	margin-right: 0px;
+	width: 100px;
+	background-repeat: no-repeat;
+	padding-top: 0px;
+	margin-top: -1px;
+	margin-top: -20px;
+	left: 142px;
+	position: relative;
+}
+
+a.li_share {
+  background: transparent url(../img/social-fb-tw-in.png) scroll no-repeat 0px -62px;
+  display: block;
+  text-indent: -999999px;
+  padding-right: 0px;
+  margin-left: 1em;
+  margin-right: 0px;
+  width: 100px;
+  background-repeat: no-repeat;
+  padding-top: 0px;
+  margin-top: -1px;
+  margin-top: -20px;
+  left: 248px;
+  position: relative;
+}
+
+.footerAdr {
+  margin-left: 3em;
+}
+
+div.sociallogos {
+display: block;
+clear: left !important;
+padding-top: 1px;
+}
+
+/* =============
+Carousel
+========= */
+
+.carousel-inner >.item  {
+  max-width:100%;
+}
+
 
 
 
@@ -64,7 +164,12 @@ body { }
    ========================================================================== */
 
 .aligncenter { display: block; margin: 0 auto; }
-.alignleft { float: left; }
+img.alignleft {
+	float: left;
+	border-color: #333333;
+	border-spacing: 4px 4px;
+	background-clip: padding-box;
+}
 .alignright { float: right; }
 figure.alignnone { margin-left: 0; margin-right: 0; }
 
@@ -74,6 +179,48 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
    Media Queries
    ========================================================================== */
 
-@media (max-width: 767px) {
+@media (max-width: 979px) {
+.footerAdr {
+  max-width: 12em;
+  float:left;
+}
+.carousel-control {
+  background: none repeat scroll 0 0 #222222;
+  border: 2px solid #FFFFFF;
+  border-radius: 13px 13px 13px 13px;
+  color: #FFFFFF;
+  font-size: 34px !important;
+  font-weight: 100;
+  height: 33px !important;
+  left: 15px;
+  line-height: 33px;
+  margin-top: -19px !important;
+  opacity: 0.5;
+  position: absolute;
+  text-align: center;
+  top: 38%;
+  width: 24px;
+}
 
+div.socialLogos {
+display: block;
+clear: left !important;
+padding-top: .5em;
+margin-left: -1em;
+}
+}
+
+@media(max-width:508px) {
+.footer {
+  padding-bottom:2em;
+  height: 300px;
+}
+.socialLogos {
+display: block;
+clear: left !important;
+padding-top: 3em;
+margin-left: -1em;
+}
+
+a.li_share {margin-top: 2em; margin-left: -10em}
 }
